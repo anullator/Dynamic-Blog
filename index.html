@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- METADATA -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        
+        <!-- description is displayed in SERP snippet -->
+        <!-- TODO: Add description -->
+        <meta name="description" content="">
+
+        <!-- Prevents search engines from indexing this page. Modify when I am ready for content to be indexed -->
+        <meta name="robots" content="noindex">
+
+        <!-- Links to stylesheets  -->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/form.css">
+
+        <title>Dynamic Blog</title>
+    </head>
+
+    <body>
+<!-- HEADER -->
+        <header>
+<!-- NAVBAR -->
+            <nav>
+                <ul>
+                    <li><a href="./blog.html">Blog Posts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+<!-- MAIN CONTENT -->
+        <main>
+            <section>
+                <h1>My First Blog</h1>
+            </section>
+
+                <!-- Create blog post -->
+            <article>
+                <h2>What's On Your Mind?</h2>
+<!-- FORM -->
+    <!-- label's for attribute should be the same as the corresponding input's id attribute to connect them -->
+    <!-- input's name attribute allows the input content to be submitted -->
+                <form action="./assets/js/form.js"> <!-- TODO: define action/verify is correct-->
+
+                    <label for="username">Username:</label>  
+                    <input type="text" id="username" name="username" placeholder="Enter Username">
+
+                    <label for="blog-title">Title:</label>
+                    <input type="text" id="blog-title" name="blog-title" placeholder="Enter Blog Title">
+
+                    <label for="blog-content">Content</label>
+                    <input type="text" id="blog-content" name="blog-content" placeholder="Enter Blog Text">
+
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+        </main>
+    </body>
+</html>
