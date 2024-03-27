@@ -5,7 +5,7 @@ const content = document.getElementById("blog-content");
 const submitBtn = document.querySelector('input[type="submit"]');
 
 // save blog post content to local storage
-function submitHandler() {
+function submitHandler(event) {
 
     // create blog post object
     const blogPost = createPostObj();
