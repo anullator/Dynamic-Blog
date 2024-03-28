@@ -6,12 +6,25 @@ const submitBtn = document.querySelector('input[type="submit"]');
 
 // save blog post content to local storage
 function submitHandler(event) {
+    event.preventDefault();
 
     // create blog post object
     const blogPost = createPostObj();
+    let blogList = [];
+
+    if (localStorage.length !== 0) {
+        const storage = localStorage.getItem("blogPosts");
+        console.log(storage);
+        blogList = JSON.parse(storage);
+    }
+
+    // add new post to blog list array
+    blogList.push(blogPost);
 
     // update local blog list
-    updateStorage(blogPost);
+    updateStorage(blogList);
+
+    window.location.href = "./blog.html";
 } 
 
 // CREATE BLOG POST
@@ -24,9 +37,9 @@ function createPostObj () {
 }
 
 // UPDATE LOCAL STORAGE
-function updateStorage (blogPost) {
-    const stringBlog = JSON.stringify(blogPost);
-    localStorage.setItem("blogPost", stringBlog);
+function updateStorage(blog) {
+    const stringBlog = JSON.stringify(blog);
+    localStorage.setItem("blogPosts", stringBlog);
 }
 
 // add event listener to submit button
