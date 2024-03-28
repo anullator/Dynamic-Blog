@@ -21,13 +21,19 @@
         <title>Dynamic Blog</title>
     </head>
 
-    <body>
+    <body data-theme="dark">
 <!-- HEADER -->
         <header>
 <!-- NAVBAR -->
             <nav>
                 <ul>
-                    <li><a href="./blog.html">Blog Posts</a></li>
+                    <li>
+                        <a href="./blog.html">Blog Posts</a>
+                    </li>
+                    <!-- Toggle mode button -->
+                    <li>
+                        <button class="toggle-mode"></button>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -61,9 +67,7 @@
         </main>
 
 <!-- JS LINKS -->
-    <script src="./assets/js/logic.js"></script>
-    <script src="./assets/js/form.js"></script>
-    <script src="./assets/js/blog.js"></script>
-
+        <script src="./assets/js/logic.js"></script>
+        <script src="./assets/js/form.js"></script>
     </body>
 </html>
