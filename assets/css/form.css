@@ -3,7 +3,7 @@ h2 {
     font-size: 3vw;
 }
 
-.form-container {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,39 +14,34 @@ h2 {
     border: 20px solid var(--color-border);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+label {
+    min-width: 15rem;
+    margin: 1rem 0 0 4rem;
+    align-self: start;
 }
 
-.input-container {
-    margin: 1rem auto;
-}
-
-label, input {
-    text-align: center;
-    width: 100%;
-    margin: 0.3rem;
+input {
+    text-align: left;
+    width: 77%;
+    margin-top: 0.5rem;
 }
 
 input, textarea {
     border: 2px solid var(--color-border);
-}
-
-textarea {
-    text-align: center;
-    min-width: 15rem;
-    max-width: 40rem;
-    margin: 0.3rem;
+    border-radius: 10px;
 }
 
 #username, #blog-title {
-    padding: 5px;
+    padding: 10px 20px;
 }
 
 #blog-content {
-    padding: 20px 0;
+    padding: 20px;
+    text-align: left;
+    min-width: 77%;
+    max-width: 30rem;
+    margin-top: 0.5rem;
+    min-height: 8rem;
 }
 
 /* style submit button */
@@ -55,6 +50,8 @@ input[type='submit'] {
     padding: 1rem 2rem;
     width: 10rem;
     border-radius: 10px;
+    background-color: lightgray;
+    color: slategray;
 }
 
 input[type='submit']:hover {

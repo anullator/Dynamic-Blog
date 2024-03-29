@@ -1,7 +1,7 @@
 // VARIABLE DECLARATIONS
 
 // elements
-const toggleBtnEl = document.querySelector(".toggle-mode");
+const toggleBtnEl = document.querySelector(".toggle-btn");
 const bodyEl = document.querySelector("body");
 
 // icons
