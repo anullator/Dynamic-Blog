@@ -12,7 +12,7 @@
     --color-bg: white;
     --color-primary: black;
     --color-secondary: lightblue;
-    --color-accent: darkgreen;
+    --color-accent: rgb(243, 174, 1);
     --color-border: rgb(83, 168, 216);
 }
 
@@ -96,7 +96,7 @@ main {
 footer {
     text-align: center;
     padding: 0.5em;
-    border: 3px solid var(--color-accent);
+    border: 3px solid var(--color-border);
     border-radius: 40px 90px;
 }
 
@@ -106,6 +106,6 @@ footer .anchor {
 }
 
 footer:hover {
-    background-color: var(--color-border);
+    background-color: var(--color-accent);
     font-weight: bold;
 }
