@@ -1,0 +1,20 @@
+.container {
+    border: 3px solid var(--color-border);
+    box-shadow: 6px 6px 3px var(--color-secondary);
+    border-radius: 15px;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+}
+
+.title {
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 2rem;
+}
+
+.author {
+    color: gray;
+}
+

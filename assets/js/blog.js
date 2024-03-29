@@ -2,10 +2,6 @@
 function getBlogList() {
     if (localStorage.length !== 0) {
         const storage = localStorage.getItem("blogPosts");
-        // console.log(storage);
-        // const blogList = JSON.parse(storage);
-        // console.log(blogList);
-        // return blogList;
         return JSON.parse(storage);
     } else {
         return;
