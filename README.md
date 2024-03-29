@@ -13,6 +13,6 @@ It demonstrates my ability to work with:
 
 Enter the author, title, and post on the first page. The post will be read into local storage. All created blogs will be rendered dynamically until local storage is cleared. It includes a feature to toggle between light and dark mode, and links to my professional portfolio.
 
-![screenshot of blog post entry page](./assets/images/screenshot-dynamic-blog.jpg);
+![screenshot of blog post entry page](./assets/images/screenshot-dynamic-blog.jpg)
 
-This is the link to the deployed webpage: _`https://anullator.github.io/Dynamic-Blog/`_
+This is the link to the deployed webpage: https://anullator.github.io/Dynamic-Blog/
