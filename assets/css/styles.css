@@ -4,6 +4,7 @@
     --color-primary: white;
     --color-secondary: darkgreen;
     --color-accent: lightblue;
+    --color-border: rgb(77, 0, 140);
 }
 
 /* light mode theme */
@@ -12,9 +13,11 @@
     --color-primary: black;
     --color-secondary: lightblue;
     --color-accent: darkgreen;
+    --color-border: rgb(83, 168, 216);
 }
 
 body {
+    min-height: 100vh;
     margin: 1em 4em;
     background-color: var(--color-bg);
     color: var(--color-primary);
@@ -25,12 +28,12 @@ body {
 header {
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4vw;
 }
 
 /* NAV and ANCHOR styling */
@@ -66,7 +69,7 @@ nav button:hover {
 
 /* Main content styles */
 main {
-    margin: 0 4em;
+    margin: 0 2em;
 }
 
 /* FOOTER styles */

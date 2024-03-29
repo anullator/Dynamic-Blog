@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         
         <!-- description is displayed in SERP snippet -->
-        <!-- TODO: Add description -->
         <meta name="description" content="">
 
         <!-- Prevents search engines from indexing this page. Modify when I am ready for content to be indexed -->
@@ -24,6 +23,7 @@
     <body data-theme="dark">
 <!-- HEADER -->
         <header>
+            <h1>Create Blog Post</h1>
 <!-- NAVBAR -->
             <nav>
                 <ul>
@@ -39,27 +39,31 @@
         </header>
         <hr>
 <!-- MAIN CONTENT -->
-        <main class="landing-page">
-            <section>
-                <h1>My First Blog</h1>
-            </section>
+        <main>
 
                 <!-- Create blog post -->
-            <article>
+            <article class="form-container">
                 <h2>What's On Your Mind?</h2>
 <!-- FORM -->
-    <!-- label's for attribute should be the same as the corresponding input's id attribute to connect them -->
-    <!-- input's name attribute allows the input content to be submitted -->
                 <form action="./blog.html">
-                    <label for="username">Username:</label>  
-                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    <!-- username input -->
+                    <div class="input-container">
+                        <label for="username">Username</label>  
+                        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    </div>
 
-                    <label for="blog-title">Title:</label>
-                    <input type="text" id="blog-title" name="blog-title" placeholder="Enter Blog Title" required>
+                    <!-- title input -->
+                    <div class="input-container">
+                        <label for="blog-title">Title</label>
+                        <input type="text" id="blog-title" name="blog-title" placeholder="Enter Blog Title" required>
+                    </div>
+                    <!-- content input -->
+                    <div class="input-container">
+                        <label for="blog-content">Content</label>
+                        <textarea type="text" id="blog-content" name="blog-content" placeholder="Enter Blog Text" required></textarea>
+                    </div>
 
-                    <label for="blog-content">Content</label>
-                    <input type="text" id="blog-content" name="blog-content" placeholder="Enter Blog Text" required>
-
+                    <!-- Submit button -->
                     <input type="submit" value="Submit">
                 </form>
             </article>
