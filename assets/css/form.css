@@ -24,7 +24,7 @@ form {
     margin: 1rem auto;
 }
 
-label, input, textarea {
+label, input {
     text-align: center;
     width: 100%;
     margin: 0.3rem;
@@ -32,6 +32,13 @@ label, input, textarea {
 
 input, textarea {
     border: 2px solid var(--color-border);
+}
+
+textarea {
+    text-align: center;
+    min-width: 15rem;
+    max-width: 40rem;
+    margin: 0.3rem;
 }
 
 #username, #blog-title {
@@ -44,8 +51,9 @@ input, textarea {
 
 /* style submit button */
 input[type='submit'] {
+    text-align: center;
     padding: 1rem 2rem;
-    width: 50%;
+    width: 10rem;
     border-radius: 10px;
 }
 
