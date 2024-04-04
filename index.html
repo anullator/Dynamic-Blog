@@ -28,11 +28,11 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="./blog.html"><button>Blog Posts</button></a>
+                        <a href="./blog.html"><button class="nav-btn">Blog Posts</button></a>
                     </li>
                     <!-- Toggle mode button -->
                     <li>
-                        <button class="toggle-mode"></button>
+                        <button class="toggle-btn"></button>
                     </li>
                 </ul>
             </nav>
@@ -42,32 +42,25 @@
         <main>
 
                 <!-- Create blog post -->
-            <article class="form-container">
-                <h2>What's On Your Mind?</h2>
 <!-- FORM -->
                 <form action="./blog.html">
+                    <h2>What's On Your Mind?</h2>
                     <!-- username input -->
-                    <div class="input-container">
                         <label for="username">Username</label>  
                         <input type="text" id="username" name="username" placeholder="Enter Username" required>
-                    </div>
+
 
                     <!-- title input -->
-                    <div class="input-container">
                         <label for="blog-title">Title</label>
                         <input type="text" id="blog-title" name="blog-title" placeholder="Enter Blog Title" required>
-                    </div>
+
                     <!-- content input -->
-                    <div class="input-container">
                         <label for="blog-content">Content</label>
-                        <br>
                         <textarea type="text" id="blog-content" name="blog-content" placeholder="Enter Blog Text" required></textarea>
-                    </div>
 
                     <!-- Submit button -->
                     <input type="submit" value="Submit">
                 </form>
-            </article>
         </main>
 
 <!-- JS LINKS -->
