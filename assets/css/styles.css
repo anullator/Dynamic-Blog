@@ -5,6 +5,8 @@
     --color-secondary: darkgreen;
     --color-accent: lightblue;
     --color-border: rgb(77, 0, 140);
+    --bg-color-hover: darkgreen;
+    --bg-color-submit: rgb(77, 0, 140);
 }
 
 /* light mode theme */
@@ -12,8 +14,9 @@
     --color-bg: white;
     --color-primary: black;
     --color-secondary: lightblue;
-    --color-accent: rgb(243, 174, 1);
     --color-border: rgb(83, 168, 216);
+    --bg-color-hover: rgb(243, 174, 1);
+    --bg-color-submit: rgb(243, 174, 1);
 }
 
 body {
@@ -59,8 +62,7 @@ nav button {
 
 nav button:hover {
     cursor: pointer;
-    background-color: var(--color-accent);
-    color: var(--color-bg);
+    background-color: var(--bg-color-hover);
     font-weight: bold;
 }
 
@@ -90,22 +92,4 @@ nav button:hover {
 /* Main content styles */
 main {
     margin: 0 2em;
-}
-
-/* FOOTER styles */
-footer {
-    text-align: center;
-    padding: 0.5em;
-    border: 3px solid var(--color-border);
-    border-radius: 40px 90px;
-}
-
-footer .anchor {
-    text-decoration: none;
-    color: var(--color-primary);
-}
-
-footer:hover {
-    background-color: var(--color-accent);
-    font-weight: bold;
 }

@@ -55,12 +55,9 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover {
-    background-color: var(--color-accent);
-    color: var(--color-bg);
+    background-color: var(--bg-color-submit);
+    color: var(--color-primary);
     font-weight: bold;
+    cursor: pointer;
+    /* border: 4px; */
 }
-
-
-
-
-

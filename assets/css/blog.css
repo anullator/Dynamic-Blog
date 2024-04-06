@@ -18,3 +18,23 @@
     color: gray;
 }
 
+/* FOOTER styles */
+footer {
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.portfolio {
+    padding: 1em 2em;
+    text-decoration: none;
+
+    border: 3px solid var(--color-border);
+    border-radius: 40px 90px;
+}
+
+.portfolio:hover {
+    background-color: var(--bg-color-hover);
+    font-weight: bold;
+    color: var(--color-primary);
+    cursor: pointer;
+}
